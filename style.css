@@ -156,12 +156,8 @@ input[type="range"] {
   transform: scale(1.15);
 }
 
-.color-swatch:not(.active) {
-  opacity: 0.35;
-}
-
 .color-swatch:hover {
-  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* ─── Action buttons ─── */
@@ -242,6 +238,12 @@ footer {
 
 /* ─── Responsive ─── */
 @media (max-width: 540px) {
+  header h1 {
+    padding: 10px 14px;
+  }
+  .header-right {
+    display: none;
+  }
   .controls {
     grid-template-columns: 1fr;
   }
